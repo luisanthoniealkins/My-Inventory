@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".ItemDetailActivity">
+
+    <TextView
+        android:id="@+id/id_tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_activity_name"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/id_edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/id_tv_name"
+        android:layout_alignParentStart="true"
+        tools:ignore="LabelFor"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/id_tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_activity_description"
+        android:textSize="20sp"
+        android:layout_below="@id/id_edt_name"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/id_edt_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/id_tv_description"
+        android:layout_alignParentStart="true"
+        tools:ignore="LabelFor"
+        android:importantForAutofill="no"/>
+
+    <TextView
+        android:id="@+id/id_tv_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_activity_quantity"
+        android:textSize="20sp"
+        android:layout_below="@id/id_edt_description"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:id="@+id/id_edt_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|textMultiLine"
+        android:textSize="18sp"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/id_tv_quantity"
+        tools:ignore="LabelFor"
+        android:importantForAutofill="no"/>
+
+    <Button
+        android:id="@+id/id_button_submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/detail_activity_submit"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="Submit"/>
+</RelativeLayout>
